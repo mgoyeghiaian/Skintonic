@@ -5,7 +5,7 @@ import SharedRoutes from "./SharedRoutes"
 const App = () => {
   return (
     <div >
-      <Navbar />
+      <Navbar/>
       <SharedRoutes />
       <Footer />
     </div>

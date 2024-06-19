@@ -1,31 +1,38 @@
-import './Navbar.css'
-import Logo from '../../assets/Logo.jpg'
-const Navbar = () => {
-  return (
-    <div className='nav-bar'>
-    <div className='nav-bar-logo'>
-      <a href=''>
-      <img src={Logo}/>
-      </a>
-      </div>
-      <div className='nav-bar-menu'>
-      <ul className='nav-bar-menu-ul'>
-        <li className='nav-bar-menu-li'>
-          <a className='nav-bar-menu-a' href='/Home'>Home</a>
-         </li>
-         <li className='nav-bar-menu-li'>
-          <a className='nav-bar-menu-a' href='/About Us'>About Us</a>
-         </li>
-         <li className='nav-bar-menu-li'>
-          <a className='nav-bar-menu-a' href='/Services'>Services</a>
-         </li>
-         <li className='nav-bar-menu-li'>
-          <a className='nav-bar-menu-a' href='/Contact Us'>Contact Us</a>
-         </li>
-      </ul>
-      </div>
-      </div>
-  )
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import './Navbar.css';
+import Logo from '../../assets/Logo.png'
+
+function Navbar() {
+	const navRef = useRef();
+
+	const showNavbar = () => {
+		navRef.current.classList.toggle(
+			"responsive_nav"
+		);
+	};
+
+	return (
+		<header>
+			<span className="logo"><a href="/#"><img className="Logo-img" src={Logo} alt="Logo"/></a></span>
+			<nav className="nav-bar" ref={navRef}>
+				<a href="../Home">Home</a>
+				<a href="/#">About Us</a>
+				<a href="/#">Services</a>
+				<a href="/#">Contact Us</a>
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaTimes />
+				</button>
+			</nav>
+			<button
+				className="nav-btn"
+				onClick={showNavbar}>
+				<FaBars />
+			</button>
+		</header>
+	);
 }
 
-export default Navbar
+export default Navbar;
