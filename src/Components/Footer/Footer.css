@@ -6,23 +6,24 @@
 	font-family: "Titillium Web", sans-serif;
 }
 .footer{
-    display: flexbox;
+    border: 2px solid black;
     text-align: center;
     width: 100%;
 }
 .first-sec{
+    justify-content: space-around;
     display: flex;
-    justify-content:space-between;
-    width: 60%;
+    width: 90%;
 }
 .main-links{
+    border: 2px solid black;
+    margin: 2%;
     display: flex;
     text-align: center;
     gap: 200px;
 }
 .links{
     display: flex;
-    padding: 0% 5%;
     gap: 20px;
     flex-direction: column;
 }
