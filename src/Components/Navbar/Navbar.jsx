@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import './Navbar.css';
 import Logo from '../../assets/Logo.png'
+import { CloseOutlined, Menu, X } from "@mui/icons-material";
 
 function Navbar() {
 	const navRef = useRef();
@@ -23,13 +23,14 @@ function Navbar() {
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
-					<FaTimes />
+		<CloseOutlined/>
 				</button>
 			</nav>
 			<button
 				className="nav-btn"
 				onClick={showNavbar}>
-				<FaBars />
+		<Menu/>
+
 			</button>
 		</header>
 	);

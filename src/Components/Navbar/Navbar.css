@@ -1,10 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
-* {
-	padding: 0;
-	margin: 0;
-	font-family: "Titillium Web", sans-serif;
-}
 
 :root {
 	--mainColor: white;
@@ -31,8 +25,7 @@ header {
 	color: var(--textColor);
 }
 .Logo-img{
-    height: 80px;
-    width: 200px;
+    width: 50%;
 }
 .nav-bar a {
     font-size: 20px;

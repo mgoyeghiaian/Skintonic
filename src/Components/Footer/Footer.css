@@ -1,95 +1,92 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
-
-* {
-	padding: 0;
-	margin: 0;
-	font-family: "Titillium Web", sans-serif;
-}
 .footer{
-    text-align: center;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: screen;
+    padding: 1%;
 }
 .first-sec{
-    justify-content: space-around;
-    display: flex;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.second-sec{
+   text-align: center;
+   font-size: small;
+}
+
+.in2infof{
+    width:  16%;
+}
+.LogoCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Logo{
+    width: 50%;
 }
 
 .main-links{
-    margin: 2%;
+    width: 100%;
     display: flex;
-    text-align: center;
-    gap: 200px;
-}
-.links{
-    display: flex;
-    gap: 20px;
+    gap: 15px;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
-.links a{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.links1{
+    display: flex;
+    width: 60%;
+   justify-content: center;
+   align-items: center;
+    flex-direction: column;
+}
+.links2 {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 35px;
+width: 100%;
+font-size: 1.2em;
+}
+.links2 a{
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 1.1rem;
 }
-.links a:hover{
-    color: #494949;
+
+.links2 a:hover{
     text-decoration: underline;
+    color: rgba(44, 43, 43, 0.751);
 }
-.Logo{
-    padding: 2% 3%;
+.sitemanagerrr{
+    font-weight: bold;
+    color: rgba(53, 51, 51, 0.903);
 }
-.Logo img{
-    height: 80px;
-    width: 200px;
+.second-sec a{
+text-decoration: none;
 }
-.second-sec{
-    padding: 2% 0%;
-    flex-direction:row;
-    font-size: 15px;
+.links1 h2{
+    font-size: larger;
 }
-.second-sec img{
-    height: 25px;
-    width: 150px;
-}
-@media screen and (max-width: 690px) {
-    .first-sec {
-        width: 80%;
-        padding: 0% 5%;
-        flex-direction: column;
-        align-items: center;
+
+@media only screen and (max-width: 720px) {
+    .main-links{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     }
 
-    .main-links {
-        flex-direction: column;
-        gap: 50px;
-        padding: 0 5%;
+    .links2{
+    flex-direction: column;
+    gap: 19px;
     }
-
-    .links {
-        padding: 0 5%;
-        gap: 10px;
-    }
-
-    .links a {
-        font-size: 16px;
-    }
-
-    .Logo img {
-        padding: 2% 8%;
-        height: 60px;
-        width: 150px;
-    }
-
-    .second-sec {
-        padding: 2% 5%;
-        text-align: center;
-    }
-
-    .second-sec img {
-        height: 20px;
-        width: 120px;
+    .in2infof{
+        width:  20%;
     }
 }
