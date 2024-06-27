@@ -1,9 +1,9 @@
-import Carousel from './Components/Carousel/Carousel'
+import Carousell from './Components/Carousel/Carousel'
 import './Home.css'
 const Home = () => {
   return (
     <div>
-      <Carousel />
+      <Carousell />
     </div>
   )
 }

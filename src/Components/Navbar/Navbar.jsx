@@ -30,7 +30,6 @@ function Navbar() {
 				className="nav-btn"
 				onClick={showNavbar}>
 		<Menu/>
-
 			</button>
 		</header>
 	);
