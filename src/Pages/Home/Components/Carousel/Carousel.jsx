@@ -1,6 +1,7 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 import imageData from '../DB';
+import './Carousel.css'
 const Carousell = () => {
   const onChange = (index) => {
     console.log(`Slide changed to: ${index}`);
@@ -15,10 +16,10 @@ const Carousell = () => {
   };
   return (
     <div>
-    <Carousel  showStatus={false}  autoPlay={true}  interval={3000} infiniteLoop={true} showArrows={false} onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}>
+    <Carousel showThumbs={false}  showStatus={false}  autoPlay={true}  interval={3000} infiniteLoop={true} showArrows={false} onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}>
       {imageData.map((image, index) => (
         <div key={index}>
-          <img src={image.src} alt={`Slide ${index + 1}`} />
+          <img  src={image.src} alt={`Slide ${index + 1}`} />
         </div>
       ))}
     </Carousel>
